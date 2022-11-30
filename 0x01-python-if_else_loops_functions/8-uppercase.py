@@ -7,5 +7,5 @@ def uppercase(str):
         else:
             result = False
 
-        print("{:s}".format(char if result else ch), end="")
+        print("{:s}".format(char if result else cha), end="")
     print()
