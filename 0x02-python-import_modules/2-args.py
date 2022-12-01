@@ -2,8 +2,8 @@
 
 if __name__ == "__main__":
     import sys
-    argv = sys.argv
-    arg_num = len(argv) - 1
+    argv = sys.argv[1:]
+    arg_num = len(argv)
     i = 1
     if arg_num == 0:
         print("{:d} arument.".format(arg_num))
@@ -14,6 +14,6 @@ if __name__ == "__main__":
         else:
             print("{:d} arguments:".format(arg_num))
 
-        while i <= arg_number:
+        while i < arg_number:
             print("{:d}: {:s}".format(i, argv[i]))
             i += 1
