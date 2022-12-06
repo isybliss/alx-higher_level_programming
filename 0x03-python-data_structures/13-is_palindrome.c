@@ -39,8 +39,25 @@ int is_palindrome(listint_t **head)
 	tmp = *head;
 	while (tmp)
 	{
+<<<<<<< HEAD
 		size++;
 		tmp = tmp->next;
+=======
+		fast = fast->next->next;
+		if (!fast)
+		{
+			dup = slow->next;
+			break;
+		}
+
+		if (!fast->next)
+		{
+			dup = slow->next->next;
+			break;
+		}
+
+		slow = slow->next;
+>>>>>>> 0772f53946fefbe81acc6102c6a2b253decf4061
 	}
 
 	tmp = *head;
@@ -57,7 +74,16 @@ int is_palindrome(listint_t **head)
 	tmp = *head;
 	while (rev)
 	{
+<<<<<<< HEAD
 		if (tmp->n != rev->n)
+=======
+		if (temp->n == dup->n)
+		{
+			dup = dup->next;
+			temp = temp->next;
+		}
+		else
+>>>>>>> 0772f53946fefbe81acc6102c6a2b253decf4061
 			return (0);
 		tmp = tmp->next;
 		rev = rev->next;
