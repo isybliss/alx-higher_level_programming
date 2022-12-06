@@ -6,5 +6,5 @@ def new_in_list(my_list, idx, element):
     if idx < o or idx > len(my_list) - 1:
         return (my_list)
 
-    new_list[idk] = element
+    new_list[idx] = element
     return (new_list)
