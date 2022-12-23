@@ -13,7 +13,7 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
 
     if op == '+':
-        print("{:d} {:c} {:d} = {:d}".format(a, op, b, add(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, op, b, add(a, b)))
     elif op == '-':
         print("{:d} {:c} {:d} = {:d}".format(a, op, b, sub(a, b)))
     elif op == '*':
