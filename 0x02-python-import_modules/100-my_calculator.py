@@ -15,11 +15,11 @@ if __name__ == "__main__":
     if op == '+':
         print("{:d} {:s} {:d} = {:d}".format(a, op, b, add(a, b)))
     elif op == '-':
-        print("{:d} {:c} {:d} = {:d}".format(a, op, b, sub(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, op, b, sub(a, b)))
     elif op == '*':
-        print("{:d} {:c} {:d} = {:d}".format(a, op, b, mul(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, op, b, mul(a, b)))
     elif op == '/':
-        print("{:d} {:c} {:d} = {:d}".format(a, op, b, div(a, b)))
+        print("{:d} {:s} {:d} = {:d}".format(a, op, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
