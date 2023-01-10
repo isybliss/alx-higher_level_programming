@@ -21,17 +21,17 @@ def print_status():
         except KeyboardInterrupt:
             continue
         if counter == 9:
-            print("File size: {}".format(size))
+            print("File size: {:d}".format(size))
             for key, val in sorted(status_codes.items()):
                 if (val != 0):
-                    print("{}: {}".format(key, val))
+                    print("{:d}: {:d}".format(key, val))
             counter = 0
         counter += 1
     if counter < 9:
-        print("File size: {}".format(size))
+        print("File size: {:d}".format(size))
         for key, val in sorted(status_codes.items()):
             if (val != 0):
-                print("{}: {}".format(key, val))
+                print("{:d}: {:d}".format(key, val))
 
 
 if __name__ == "__main__":
