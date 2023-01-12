@@ -6,9 +6,16 @@ def safe_print_list(my_list=[], x=0):
             if index < x:
                 print(my_list[index], end='')
                 index += 1
+        '''
             else:
                 print()
                 return index
         except IndexError:
             print()
             return index
+         '''
+                 print()
+         except IndexError:
+             print()
+         finally:
+             return index
