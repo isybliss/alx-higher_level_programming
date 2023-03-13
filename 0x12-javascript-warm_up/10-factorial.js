@@ -6,4 +6,4 @@ function factorial (number) {
   return (number * factorial(number - 1));
 }
 
-console.log(factorial(pareInt(process.argv[2])));
+console.log(factorial(parseInt(process.argv[2])));
