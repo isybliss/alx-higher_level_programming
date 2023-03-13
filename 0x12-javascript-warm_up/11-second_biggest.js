@@ -3,20 +3,19 @@ function second (myArg) {
   if (myArg.length === 2 || myArg.length === 3) {
     return (0);
   }
-  
+
   let max = myArg[2];
   let secondMax = myArg[3];
 
   for (let i = 2; i < myArg.length; i++) {
     if (myArg[i] > max) {
-	    secondMax = max;
-	    max = myArg[i];
+      secondMax = max;
+      max = myArg[i];
     } else if (myArg[i] > secondMax && myArg[i] < max) {
-	    secondMax = myArg[i];
+      secondMax = myArg[i];
     }
   }
   return (secondMax);
 }
-
 
 console.log(second(process.argv));
