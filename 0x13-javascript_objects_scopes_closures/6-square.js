@@ -1,24 +1,24 @@
 #!/usr/bin/node
-//class square that defines a square and inherits from class square 
-//of 5-square.js
+// class square that defines a square and inherits from class square
+// of 5-square.js
 
-const Square = require('./5-square');
+const Square_ = require('./5-square');
 
-class Square extends Square {
-  charPrint(c) {
+class Square extends Square_ {
+  charPrint (c) {
     if (c) {
       let outPut = '';
       for (let i = 0; i < this.height; i++) {
-        for (let j = 0; j < this.width) {
+        for (let j = 0; j < this.width; j++) {
           outPut = outPut + c;
         }
         console.log(outPut);
-	outPut = ''
+        outPut = '';
       }
     } else {
-    super.print();
+      super.print();
     }
   }
 }
 
-module.exports = Square
+module.exports = Square;
