@@ -4,9 +4,8 @@ script that lists all states
 starting with N  from the database hbtn_0e_0_usa
 """
 
-
 import MySQLdb
-from sys import arg
+from sys import argv
 
 if __name__ == "__main__":
     con = MySQLdb.connect(
