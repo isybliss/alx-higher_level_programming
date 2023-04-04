@@ -10,5 +10,5 @@ if __name__ == '__main__':
     f = requests.get('https://alx-intranet.hbtn.io/status')
     status = f.text
     print("Body response:")
-    print("\t- table: {}".format(type(status)))
+    print("\t- type: {}".format(type(status)))
     print("\t- content: {}".forma(status))
