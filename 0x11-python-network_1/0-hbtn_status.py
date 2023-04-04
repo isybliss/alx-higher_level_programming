@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-script that fetches a url
+script that fetches https://alx-intranet.hbtn.io/status
+using urllib package
+with statement must be used
 """
 
 
