@@ -7,9 +7,8 @@ script that fetches a url
 if __name__ == '__main__':
     import urllib.request
 
-    request_url = 'http://alx-intranet.hbtn.io/status'
-    with urllib.request.urlopen(request_url) as response:
-        status = response.read()
+    with urllib.request.urlopen('http://alx-intranet.hbtn.io/status') as f:
+        status = f.read()
         print("Body response:")
         print("\t- type: {}".format(type(status)))
         print("\t- content: {}".format(status))
