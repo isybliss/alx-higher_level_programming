@@ -11,4 +11,4 @@ if __name__ == '__main__':
     status = f.text
     print("Body response:")
     print("\t- type: {}".format(type(status)))
-    print("\t- content: {}".forma(status))
+    print("\t- content: {}".format(status))
