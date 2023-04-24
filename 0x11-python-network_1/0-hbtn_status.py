@@ -9,7 +9,8 @@ with statement must be used
 if __name__ == '__main__':
     import urllib.request
 
-    with urllib.request.urlopen('http://alx-intranet.hbtn.io/status') as f:
+    req = urllib.request.Request('http://alx-intranet.hbtn.io/status')
+    with urllib.request.urlopen(req) as f:
         status = f.read()
         print("Body response:")
         print("\t- type: {}".format(type(status)))
