@@ -10,7 +10,7 @@ import sys
 if __name__ == '__main__':
     username = sys.argv[1]
     pat = sys.argv[2]
-    auth=HTTPBasicAuth(username, pat)
+    auth = HTTPBasicAuth(username, pat)
     url = 'https://api.github.com/user'
     f = requests.get(url,
                      auth=auth)
