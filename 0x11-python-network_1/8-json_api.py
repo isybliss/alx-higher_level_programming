@@ -13,8 +13,8 @@ if __name__ == "__main__":
         letter = sys.argv[1]
 
     values = {'q': letter}
-    url = sys.argv[0]
-    r = requests.post(url, data=values)
+    url = "http://0.0.0.0:5000/search_user"
+    r = requests.post(url, values)
     try:
         response = r.json()
         if response == {}:
