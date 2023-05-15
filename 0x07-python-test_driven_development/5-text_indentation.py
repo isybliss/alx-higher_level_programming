@@ -25,4 +25,14 @@ def text_indentation(text):
             while c < len(text) and text[c] == ' ':
                 c += 1
             continue
+            
+    """
+    for i in range(len(text)):
+        if text[i] in '.?:':
+            print(text[i])
+         elif text[i] == '' and text[i - 1] in '.?:':
+            print()
+         else:
+            print(text[i], end="")
+  """"
         c += 1
