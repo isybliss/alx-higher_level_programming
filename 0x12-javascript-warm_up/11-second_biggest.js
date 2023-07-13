@@ -7,7 +7,7 @@ function second (myArg) {
   let max = myArg[2];
   let secondMax = myArg[3];
 
-  for (let i = 2; i < myArg.length; i++) {
+  for (let i = 3; i < myArg.length; i++) {
     if (myArg[i] > max) {
       secondMax = max;
       max = myArg[i];
